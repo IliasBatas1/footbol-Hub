@@ -9,7 +9,7 @@ COPY package.json package-lock.json* ./
 # Install dependencies
 RUN npm install
 
-# Copy the rest of the application and .env file
+# Copy the rest of the application 
 COPY . .
 
 RUN --mount=type=secret,id=envfile \
